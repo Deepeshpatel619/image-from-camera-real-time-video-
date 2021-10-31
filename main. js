@@ -1,0 +1,23 @@
+let video=document.getElementById('video')
+if(navigator.mediaDevices.getUserMedia)
+{
+  navigator.mediaDevices.getUserMedia ({video:{facingMode:'user' }}).then(function(e){
+    video. srcObject=e;
+    
+  }).catch(function(err){
+    console.log(err); 
+  }); 
+  
+} 
+else 
+{
+  console.log('denied! ')
+}
+
+function capture(){
+let canvas=document.getElementById('canvas')
+let ctx=canvas.getContext('2d'); 
+
+ctx.drawImage(video,0,0,video.width,video.height); 
+
+} 
