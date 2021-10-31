@@ -1,0 +1,19 @@
+body{
+    font-size: 15pt;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    background-color:rgba(0,0,0,.3); 
+}
+canvas{
+  margin-top: 20px; 
+  border:1px solid black; 
+  postion:absolute; 
+  bottom:0; 
+  right:0; 
+}
+button{
+  border-radius:4px; 
+} 
